@@ -25,4 +25,5 @@ hs_err_pid*
 # idea and gruddle
 .idea
 .gradle
+!gradle/wrapper/gradle-wrapper.jar
 local.properties
