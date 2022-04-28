@@ -28,8 +28,7 @@ public class CapabilitiesProvider {
 
         switch ( PropertiesProvider.getDeviceProperties().getPlatformSystem() ) {
             case Android:
-                capabilities.setCapability("automationName", "XCUITest");
-                capabilities.setCapability("appPackage", "com.jayway.contacts");
+                capabilities.setCapability("automationName", "UiAutomator2");
                 break;
             case iOS:
                 capabilities.setCapability("automationName", "XCUITest");
