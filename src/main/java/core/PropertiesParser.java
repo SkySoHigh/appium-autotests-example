@@ -27,7 +27,7 @@ public class PropertiesParser {
         try {
             return Enum.valueOf(enumType, value);
         } catch (IllegalArgumentException e) {
-            // !TODO  Добавить log.error с сообщением e.printStackTrace();
+            // !TODO  Add log.error -> e.printStackTrace();
             throw new IllegalArgumentException("Unsupported value: " + value + " for " + enumType.getName());
         }
 
