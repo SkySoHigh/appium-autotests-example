@@ -1,4 +1,5 @@
-### Инструкция по установке на Ubuntu
+### Инструкция по установке appium на Ubuntu
+Данный способ является альтернативой установке GUI компонент. Подробнее [тут.](./gui_appium_installation_guide.md)
 1. Установить npm nodejs.\
    [Подробнее тут (вреси и ос)](https://github.com/nodesource/distributions/blob/master/README.md).
     ```shell
