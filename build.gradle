@@ -11,12 +11,19 @@ repositories {
 
 dependencies {
     implementation 'org.seleniumhq.selenium:selenium-java:4.1.3'
+    implementation 'org.jetbrains:annotations:23.0.0'
+    implementation 'org.testng:testng:7.5'
     implementation 'io.appium:java-client:8.0.0'
-    implementation 'org.jetbrains:annotations:20.1.0'
+    implementation 'com.codeborne:selenide:6.5.0'
+
     compileOnly 'org.projectlombok:lombok:1.18.24'
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.3'
+    implementation 'org.slf4j:slf4j-simple:1.7.36'
 }
 
 test {
-    useJUnitPlatform()
+    useTestNG()
 }
