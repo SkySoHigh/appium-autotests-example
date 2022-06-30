@@ -1,14 +1,26 @@
 package widgets;
 
-import core.DriverProvider;
-import io.appium.java_client.AppiumDriver;
+
+import locators.builder.LocatorBuilder;
+import locators.builder.pojo.LocatorsToPlatforms;
+import locators.builder.annotations.FindByPlatform;
+import lombok.Getter;
+import lombok.Setter;
+import org.openqa.selenium.By;
+
 
 public class BaseElement {
 
-    protected AppiumDriver driver;
+    @Getter
+    @Setter
+    private By locator;
 
-    public BaseElement() {
-        driver = DriverProvider.getDriver();
-        // !TODO set locator based on reflection on annotation
+    @Getter
+    private final LocatorsToPlatforms locators;
+
+    public BaseElement(FindByPlatform findByPlatform) {
+        locators = LocatorBuilder.buildLocators(findByPlatform);
+        locator = locators.getAndroid();
     }
 }
+
