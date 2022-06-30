@@ -1,6 +1,10 @@
 package pages;
 
 
+import locators.builder.WidgetsInitInjector;
+
 public class BasePage {
-    //    Place for extensions
+    public BasePage() {
+        WidgetsInitInjector.InitializeAllWidgets(this);
+    }
 }
