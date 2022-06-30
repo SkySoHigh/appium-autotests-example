@@ -1,11 +1,14 @@
 package core;
 
 import pages.AuthorizationPage;
-import pages.PermissionsPage;
+
+import static com.codeborne.selenide.appium.ScreenObject.screen;
 
 public class BaseRouter {
 
-    PermissionsPage permissionsPage = new PermissionsPage();
-    AuthorizationPage authorizationPage = new AuthorizationPage();
+    public AuthorizationPage authorizationPage() {
+        return screen(AuthorizationPage.class);
+    }
+
 
 }
