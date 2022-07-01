@@ -2,7 +2,7 @@ package widgets;
 
 
 import locators.builder.LocatorBuilder;
-import locators.builder.pojo.LocatorsToPlatforms;
+import locators.builder.models.LocatorsToPlatforms;
 import locators.builder.annotations.FindByPlatform;
 import lombok.Getter;
 import lombok.Setter;
@@ -10,7 +10,6 @@ import org.openqa.selenium.By;
 
 
 public class BaseElement {
-
     @Getter
     @Setter
     private By locator;

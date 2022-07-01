@@ -1,4 +1,4 @@
-package locators.builder.pojo;
+package locators.builder.models;
 
 import lombok.Getter;
 

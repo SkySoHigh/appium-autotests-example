@@ -1,8 +1,8 @@
 package locators.builder;
 
 import locators.builder.annotations.FindByPlatform;
-import locators.builder.pojo.LocatorMeta;
-import locators.builder.pojo.LocatorsToPlatforms;
+import locators.builder.models.LocatorMeta;
+import locators.builder.models.LocatorsToPlatforms;
 import org.openqa.selenium.By;
 
 import java.lang.annotation.Annotation;
@@ -90,7 +90,6 @@ public class LocatorBuilder {
         List<String> targetAnnotationMethodNamesList = getMethodNames(elementAnnotation.getDeclaredMethods());
         targetAnnotationMethodNamesList.removeAll(BUILT_IN_METHOD_TO_BE_EXCLUDED);
         targetAnnotationMethodNamesList.removeAll(FIND_BY_METHODS_TO_BE_EXCLUDED);
-        targetAnnotationMethodNamesList.remove("query");
         return targetAnnotationMethodNamesList.stream()
                 .map((methodName) -> {
                     try {

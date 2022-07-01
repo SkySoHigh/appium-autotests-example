@@ -1,7 +1,7 @@
 package locators.builder;
 
 import io.appium.java_client.AppiumBy;
-import locators.builder.pojo.LocatorMeta;
+import locators.builder.models.LocatorMeta;
 import org.openqa.selenium.By;
 
 import java.util.List;
@@ -86,7 +86,6 @@ public enum ByStrategies {
     public static List<String> strategiesNames() {
         return Stream.of(values()).map((s) -> s.valueName).collect(Collectors.toList());
     }
-
 
     public String returnValueName() {
         return valueName;
