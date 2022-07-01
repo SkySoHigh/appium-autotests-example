@@ -2,7 +2,6 @@ package core;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonUnwrapped;
 import lombok.NonNull;
 import lombok.Value;
 

@@ -16,5 +16,17 @@
       "deviceName": "iPhone 10",
       "automationName": "XCUITest"
     }
-  }
+  },
+  {
+    "name": "Test",
+    "caps": {
+      "platformName": "Android",
+      "appium:platformVersion": "12",
+      "appium:app": "/Users/shindjou/MY_TESTS/appium-autotests-example/app/Android/unicom_1_0_2_2.apk",
+      "appium:deviceName": "emulator-5554",
+      "appium:automationName": "UIautom",
+      "appium:autoGrantPermissions": true,
+      "appium:forceEspressoRebuild": true
+    }
+}
 ]
